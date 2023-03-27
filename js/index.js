@@ -14,7 +14,17 @@ let links = document.getElementsByTagName("a");
 
 // document.write("All links now looped");
 
-for (let j = 0; j < links.length; j++) {
-    links[j].className = "link-" + j;
-    
+// for (let j = 0; j < links.length; j++) {
+//     links[j].className = "link-" + j;
+// }
+
+
+// -- function
+
+function avrageNum (a,b) {
+    let avg = (a+b)/2;
+    console.log(avg);
+    return avg;
 }
+let resulte= avrageNum(10 , 20);
+console.log("this average is :" + resulte);
