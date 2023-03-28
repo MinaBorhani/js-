@@ -32,17 +32,44 @@ let links = document.getElementsByTagName("a");
 
 // --Object
 
-let myCar = {
-    MaxSpeed : 150 , 
-    driver: "Mina" , 
-    drive : function (speed , time) {
+// let myCar = {
+//     MaxSpeed : 150 , 
+//     driver: "Mina" , 
+//     drive : function (speed , time) {
+//         console.log(speed * time);
+//     },
+//     logDriver : function(){
+//         console.log("driver name is " + this.driver);
+//     }
+// };
+
+// console.log(myCar.MaxSpeed);
+// myCar.drive(10 , 5);
+// myCar.logDriver()
+
+
+// --Constructor Functions
+
+let myCar = function (MaxSpeed ,  driver){
+    this.MaxSpeed = MaxSpeed;
+    this.driver = driver;
+    this.drive = function (speed , time){
         console.log(speed * time);
-    },
-    logDriver : function(){
-        console.log("driver name is " + this.driver);
-    }
+    };
+    this.logDriver = function(){
+        console.log("my driver is " + this.driver);
+    };
 };
 
-console.log(myCar.MaxSpeed);
-myCar.drive(10 , 5);
-myCar.logDriver()
+
+let car1 = new myCar( 30 , "Roze");
+let car2 = new myCar( 10 , "nil nil");
+let car3 = new myCar( 40 , "fafa");
+let car4 = new myCar( 20 , "mahi");
+
+
+car1.drive(60 , 60);
+car2.logDriver();
+console.log(car3.MaxSpeed);
+console.log(car4.driver);
+
