@@ -21,10 +21,28 @@ let links = document.getElementsByTagName("a");
 
 // -- function
 
-function avrageNum (a,b) {
-    let avg = (a+b)/2;
-    console.log(avg);
-    return avg;
-}
-let resulte= avrageNum(10 , 20);
-console.log("this average is :" + resulte);
+// function avrageNum (a,b) {
+//     let avg = (a+b)/2;
+//     console.log(avg);
+//     return avg;
+// }
+// let resulte= avrageNum(10 , 20);
+// console.log("this average is :" + resulte);
+
+
+// --Object
+
+let myCar = {
+    MaxSpeed : 150 , 
+    driver: "Mina" , 
+    drive : function (speed , time) {
+        console.log(speed * time);
+    },
+    logDriver : function(){
+        console.log("driver name is " + this.driver);
+    }
+};
+
+console.log(myCar.MaxSpeed);
+myCar.drive(10 , 5);
+myCar.logDriver()
