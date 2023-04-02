@@ -86,15 +86,28 @@ let links = document.getElementsByTagName("a");
 // ------------------********------------------------
 // --new project
 
-let content= document.getElementById("content");
-let button = document.getElementById("show-more");
+// let content= document.getElementById("content");
+// let button = document.getElementById("show-more");
 
-button.onclick = function(){
-    if(content.className == "open"){
-        content.className = "";
-        button.innerHTML = "SHOE MORE";
-    }else{
-        content.className = "open";
-        button.innerHTML = "SHOW LESS";
-    }
+// button.onclick = function(){
+//     if(content.className == "open"){
+//         content.className = "";
+//         button.innerHTML = "SHOE MORE";
+//     }else{
+//         content.className = "open";
+//         button.innerHTML = "SHOW LESS";
+//     }
+// }
+
+
+
+// ------------------********------------------------
+// --new project Timers
+
+let myMessage =  document.getElementById("message");
+
+function showMessage (){
+    myMessage.className = "show";
 }
+
+setTimeout(showMessage , 3000);
