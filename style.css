@@ -75,3 +75,16 @@ body{
     -moz-transition: max-height 0.7s;
     transition: max-height 0.7s;
 }
+
+#colors_changer{
+    width: 200px;
+    height: 100px;
+    margin: 100px;
+    border: 1px solid #000;
+    background: #fff;
+
+    /* Set transtion up */
+    -webkit-transition: max-height 0.7s;
+    -moz-transition: max-height 0.7s;
+    transition: max-height 0.7s;
+}
