@@ -1,4 +1,4 @@
-let links = document.getElementsByTagName("a");
+// let links = document.getElementsByTagName("a");
 
 // because smaller than --links.length-- , the last link is not printed
 // for (let i = 0; i < links.length; i++) {
@@ -104,10 +104,29 @@ let links = document.getElementsByTagName("a");
 // ------------------********------------------------
 // --new project Timers
 
-let myMessage =  document.getElementById("message");
+// let myMessage =  document.getElementById("message");
 
-function showMessage (){
-    myMessage.className = "show";
+// function showMessage (){
+//     myMessage.className = "show";
+// }
+
+// setTimeout(showMessage , 3000);
+
+
+// ------------------********------------------------
+// --new project Timers 2
+
+let colorChenger = document.getElementById("colors_changer");
+let colors = ["red" , "green"  , "pink" , "blue"];
+let counter = 0;
+
+function changeColor(){
+
+    if(counter >= colors.length){
+        counter = 0;
+    }
+    colorChenger.style.background = colors[counter];
+    counter++;
 }
 
-setTimeout(showMessage , 3000);
+setInterval(changeColor , 3000);
