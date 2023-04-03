@@ -141,10 +141,28 @@
 // ------------------********------------------------
 // --Accessing Form Elements
 
-    myform.name.onfocus = function(){
-         myform.name.style.border = "4px solid pink";
-    };
+//     myform.name.onfocus = function(){
+//          myform.name.style.border = "4px solid pink";
+//     };
 
-    myform.name.onblur = function(){
-        myform.name.style.border = "none";
-   };
+//     myform.name.onblur = function(){
+//         myform.name.style.border = "none";
+//    };
+
+
+
+// ------------------********------------------------
+// --VERY Simple Form Validation
+
+let myForms = document.getElementById("my-form");
+let message = document.getElementById("message");
+
+        myForms.onsubmit = function(){
+            if(myForms.name.value == ""){
+                message.innerHTML = "- Plese enter a name -";
+                // return false;
+            } else{
+                message.innerHTML = "";
+                // return true
+            }
+        };
