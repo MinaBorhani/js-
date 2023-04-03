@@ -116,22 +116,35 @@
 // ------------------********------------------------
 // --new project Timers 2
 
-let colorChenger = document.getElementById("colors_changer");
-let colors = ["red" , "green"  , "pink" , "blue" , "yellow"];
-let counter = 0;
+// let colorChenger = document.getElementById("colors_changer");
+// let colors = ["red" , "green"  , "pink" , "blue" , "yellow"];
+// let counter = 0;
 
-function changeColor(){
+// function changeColor(){
 
-    if(counter >= colors.length){
-        counter = 0;
-    }
-    colorChenger.style.background = colors[counter];
-    counter++;
-}
+//     if(counter >= colors.length){
+//         counter = 0;
+//     }
+//     colorChenger.style.background = colors[counter];
+//     counter++;
+// }
 
-let myTime = setInterval(changeColor , 3000);
+// let myTime = setInterval(changeColor , 3000);
 
-colorChenger.onclick= function colorStop (){
-    clearInterval(myTime);
-    colorChenger.innerHTML = "TimerStoped";
-}
+// colorChenger.onclick= function colorStop (){
+//     clearInterval(myTime);
+//     colorChenger.innerHTML = "TimerStoped";
+// }
+
+
+
+// ------------------********------------------------
+// --Accessing Form Elements
+
+    myform.name.onfocus = function(){
+         myform.name.style.border = "4px solid pink";
+    };
+
+    myform.name.onblur = function(){
+        myform.name.style.border = "none";
+   };
