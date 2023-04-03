@@ -77,4 +77,8 @@ let links = document.getElementsByTagName("a");
 // --The Date Object
 
 let myDate = new Date();
+let myPastDate = new Date(2015, 10, 9, 18 , 34, 56);
+let myFutureDate = new Date(2121, 21, 21, 21 , 21, 21);
 console.log(myDate);
+console.log(myPastDate);
+console.log(myFutureDate);
