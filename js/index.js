@@ -83,7 +83,7 @@ let links = document.getElementsByTagName("a");
 // console.log(myPastDate);
 // console.log(myFutureDate);
 
-------------------********------------------------
+// ------------------********------------------------
 // --new project
 
 let content= document.getElementById("content");
