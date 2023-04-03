@@ -83,5 +83,18 @@ let links = document.getElementsByTagName("a");
 // console.log(myPastDate);
 // console.log(myFutureDate);
 
-
+------------------********------------------------
 // --new project
+
+let content= document.getElementById("content");
+let button = document.getElementById("show-more");
+
+button.onclick = function(){
+    if(content.className == "open"){
+        content.className = "";
+        button.innerHTML = "SHOE MORE";
+    }else{
+        content.className = "open";
+        button.innerHTML = "SHOW LESS";
+    }
+}
