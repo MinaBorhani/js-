@@ -117,7 +117,7 @@
 // --new project Timers 2
 
 let colorChenger = document.getElementById("colors_changer");
-let colors = ["red" , "green"  , "pink" , "blue"];
+let colors = ["red" , "green"  , "pink" , "blue" , "yellow"];
 let counter = 0;
 
 function changeColor(){
@@ -129,4 +129,9 @@ function changeColor(){
     counter++;
 }
 
-setInterval(changeColor , 3000);
+let myTime = setInterval(changeColor , 3000);
+
+colorChenger.onclick= function colorStop (){
+    clearInterval(myTime);
+    colorChenger.innerHTML = "TimerStoped";
+}
