@@ -47,7 +47,7 @@ body{
 
 /* ------------------------------------- */
 
-#message{
+/* #message{
     width: 400px;
     background: #ddaaaa;
     padding: 20px;
@@ -62,7 +62,7 @@ body{
     opacity: 0;
 
     /* Set transtion up */
-    -webkit-transition: max-height 0.7s;
+/*    -webkit-transition: max-height 0.7s;
     -moz-transition: max-height 0.7s;
     transition: max-height 0.7s;
 }
@@ -71,7 +71,7 @@ body{
     opacity: 1;
 
     /* Set transtion up */
-    -webkit-transition: max-height 0.7s;
+/*    -webkit-transition: max-height 0.7s;
     -moz-transition: max-height 0.7s;
     transition: max-height 0.7s;
 }
@@ -84,7 +84,7 @@ body{
     background: #fff;
 
     /* Set transtion up */
-    -webkit-transition: max-height 0.7s;
+/*    -webkit-transition: max-height 0.7s;
     -moz-transition: max-height 0.7s;
     transition: max-height 0.7s;
-}
+} */
